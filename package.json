@@ -1,0 +1,62 @@
+{
+  "name": "test-repo-for-introduction-to-unit-testing-with-jest",
+  "version": "1.0.0",
+  "description": "NestJS project for introduction to unit testing with Jest",
+  "author": "Victor Yeh",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "overrides": {
+    "lodash": ">=4.17.21",
+    "braces": ">=3.0.3",
+    "cross-spawn": ">=6.0.6",
+    "got": ">=11.8.5",
+    "micromatch": ">=4.0.8",
+    "tmp": ">=0.2.4",
+    "glob": ">=10.4.5",
+    "test-exclude": ">=7.0.0"
+  },
+  "scripts": {
+    "build": "nest build",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "nest build && node dist/src/main",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.{ts,tsx}\" --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "doc": "doxygen Doxyfile",
+    "audit:fix": "npm audit fix || true && npm audit --audit-level=high",
+    "audit:check": "npm audit --audit-level=high"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
+    "@nestjs/platform-express": "^11.0.0",
+    "reflect-metadata": "^0.2.0",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@nestjs/cli": "^11.0.16",
+    "@nestjs/schematics": "^11.0.0",
+    "@nestjs/testing": "^11.0.0",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^22.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "jest": "^29.7.0",
+    "jiti": "^2.0.0",
+    "prettier": "^3.0.0",
+    "source-map-support": "^0.5.21",
+    "ts-jest": "^29.2.0",
+    "ts-loader": "^9.5.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}
